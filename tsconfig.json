@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "esnext",
+    "strict": true,
+    "outDir": ".ts-tmp",
+    "composite": true,
+    "declarationMap": true,
+    "baseUrl": "./",
+    "rootDir": "./",
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "lib": ["ESNext", "DOM"],
+    "types": []
+  },
+  "include": ["src/**/*"]
+}
