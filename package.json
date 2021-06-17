@@ -1,7 +1,7 @@
 {
   "name": "safari-14-idb-fix",
   "version": "1.0.0",
-  "description": "",
+  "description": "Working around a Safari 14 IndexedDB bug",
   "main": "./dist/cjs-compat/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
