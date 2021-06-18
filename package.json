@@ -1,6 +1,6 @@
 {
   "name": "safari-14-idb-fix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Working around a Safari 14 IndexedDB bug",
   "homepage": "https://github.com/jakearchibald/safari-14-idb-fix",
   "main": "./dist/cjs-compat/index.js",
