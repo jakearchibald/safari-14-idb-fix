@@ -5,7 +5,8 @@
  * This probably creates garbage, but garbage is better than totally failing.
  */
 function idbReady() {
-    const isSafari = /Safari\//.test(navigator.userAgent) &&
+    const isSafari = !navigator.userAgentData &&
+        /Safari\//.test(navigator.userAgent) &&
         !/Chrom(e|ium)\//.test(navigator.userAgent);
     // No point putting other browsers through this mess.
     if (!isSafari)
