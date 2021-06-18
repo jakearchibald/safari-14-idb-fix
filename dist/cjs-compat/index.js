@@ -7,7 +7,7 @@
  */
 
 function idbReady() {
-  var isSafari = /Safari\//.test(navigator.userAgent) && !/Chrom(e|ium)\//.test(navigator.userAgent); // No point putting other browsers through this mess.
+  var isSafari = !navigator.userAgentData && /Safari\//.test(navigator.userAgent) && !/Chrom(e|ium)\//.test(navigator.userAgent); // No point putting other browsers through this mess.
 
   if (!isSafari) return Promise.resolve();
   var intervalId;
