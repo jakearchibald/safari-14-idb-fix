@@ -10,8 +10,8 @@ export default function idbReady(): Promise<void> {
     /Safari\//.test(navigator.userAgent) &&
     !/Chrom(e|ium)\//.test(navigator.userAgent);
 
-  // No point putting other browsers through this mess.
-  if (!isSafari) return Promise.resolve();
+  // No point putting other browsers or older versions of Safari through this mess.
+  if (!isSafari || !indexedDB.databases) return Promise.resolve();
 
   let intervalId: number;
 
