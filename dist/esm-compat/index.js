@@ -5,9 +5,9 @@
  * This probably creates garbage, but garbage is better than totally failing.
  */
 function idbReady() {
-  var isSafari = !navigator.userAgentData && /Safari\//.test(navigator.userAgent) && !/Chrom(e|ium)\//.test(navigator.userAgent); // No point putting other browsers through this mess.
+  var isSafari = !navigator.userAgentData && /Safari\//.test(navigator.userAgent) && !/Chrom(e|ium)\//.test(navigator.userAgent); // No point putting other browsers or older versions of Safari through this mess.
 
-  if (!isSafari) return Promise.resolve();
+  if (!isSafari || !indexedDB.databases) return Promise.resolve();
   var intervalId;
   return new Promise(function (resolve) {
     var tryIdb = function tryIdb() {
