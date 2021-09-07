@@ -11,12 +11,12 @@
       "require": "./dist/cjs/index.cjs",
       "import": "./dist/esm/index.js"
     },
-    "./cjs": "./dist/cjs/index.cjs",
-    "./cjs-compat": "./dist/cjs-compat/index.cjs",
-    "./esm": "./dist/esm/index.js",
-    "./esm-compat": "./dist/esm-compat/index.js",
-    "./iife": "./dist/iife/index-min.js",
-    "./iife-compat": "./dist/iife-compat/index-min.js",
+    "./dist/cjs": "./dist/cjs/index.cjs",
+    "./dist/cjs-compat": "./dist/cjs-compat/index.cjs",
+    "./dist/esm": "./dist/esm/index.js",
+    "./dist/esm-compat": "./dist/esm-compat/index.js",
+    "./dist/iife": "./dist/iife/index-min.js",
+    "./dist/iife-compat": "./dist/iife-compat/index-min.js",
     "./package.json": "./package.json"
   },
   "type": "module",
