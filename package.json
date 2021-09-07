@@ -16,7 +16,8 @@
   },
   "type": "module",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepack": "npm run build"
   },
   "files": [
     "dist/**"
