@@ -25,9 +25,9 @@ idbReady().then(() => {
 
 A modern build tool will handle the above example fine, but if you need some different builds:
 
-- `dist/cjs/index.js` CommonJS module.
-- `dist/cjs-compat/index.js` CommonJS module, transpiled for older browsers.
-- `dist/esm/index.js` EcmaScript module.
-- `dist/esm-compat/index.js` EcmaScript module, transpiled for older browsers.
-- `dist/iife/index-min.js` Minified plain JS, which creates an `idbReady` global.
-- `dist/iife-compat/index-min.js` As above, but transpiled for older browsers.
+- `safari-14-idb-fix/cjs` CommonJS module.
+- `safari-14-idb-fix/cjs-compat` CommonJS module, transpiled for older browsers.
+- `safari-14-idb-fix/esm` EcmaScript module.
+- `safari-14-idb-fix/esm-compat` EcmaScript module, transpiled for older browsers.
+- `safari-14-idb-fix/iife` Minified plain JS, which creates an `idbReady` global.
+- `safari-14-idb-fix/iife-compat` As above, but transpiled for older browsers.

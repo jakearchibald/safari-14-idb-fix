@@ -5,3 +5,4 @@ This only documents breaking changes. For other changes, see the commit log.
 - `dist` no longer commited.
 - CommonJS files now have a `.cjs` extension.
 - Sourcemaps no longer included.
+- Package exports used to create paths to other builds.

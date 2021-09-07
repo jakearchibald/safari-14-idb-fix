@@ -8,10 +8,15 @@
   "types": "./dist/esm/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/cjs/index.js",
+      "require": "./dist/cjs/index.cjs",
       "import": "./dist/esm/index.js"
     },
-    "./dist/*": "./dist/*/index.js",
+    "./cjs": "./dist/cjs/index.cjs",
+    "./cjs-compat": "./dist/cjs-compat/index.cjs",
+    "./esm": "./dist/esm/index.js",
+    "./esm-compat": "./dist/esm-compat/index.js",
+    "./iife": "./dist/iife/index-min.js",
+    "./iife-compat": "./dist/iife-compat/index-min.js",
     "./package.json": "./package.json"
   },
   "type": "module",
