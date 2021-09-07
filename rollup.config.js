@@ -36,7 +36,7 @@ export default async function () {
           format: 'es',
         },
         {
-          file: 'dist/cjs/index.js',
+          file: 'dist/cjs/index.cjs',
           format: 'cjs',
           exports: 'default',
         },
@@ -68,7 +68,7 @@ export default async function () {
           plugins: [getBabelPlugin()],
         },
         {
-          file: 'dist/cjs-compat/index.js',
+          file: 'dist/cjs-compat/index.cjs',
           format: 'cjs',
           exports: 'default',
           plugins: [getBabelPlugin()],
