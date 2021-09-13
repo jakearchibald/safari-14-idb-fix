@@ -32,16 +32,16 @@ export default async function () {
       plugins: [simpleTS('./')],
       output: [
         {
-          file: 'dist/esm/index.js',
+          file: 'dist/index.js',
           format: 'es',
         },
         {
-          file: 'dist/cjs/index.cjs',
+          file: 'dist/index.cjs',
           format: 'cjs',
           exports: 'default',
         },
         {
-          file: 'dist/iife/index-min.js',
+          file: 'dist/iife.min.js',
           format: 'iife',
           name: 'idbReady',
           esModule: false,
@@ -63,18 +63,18 @@ export default async function () {
       plugins: [simpleTS('./', { noBuild: true })],
       output: [
         {
-          file: 'dist/esm-compat/index.js',
+          file: 'dist/compat.js',
           format: 'es',
           plugins: [getBabelPlugin()],
         },
         {
-          file: 'dist/cjs-compat/index.cjs',
+          file: 'dist/compat.cjs',
           format: 'cjs',
           exports: 'default',
           plugins: [getBabelPlugin()],
         },
         {
-          file: 'dist/iife-compat/index-min.js',
+          file: 'dist/iife-compat.min.js',
           format: 'iife',
           name: 'idbReady',
           esModule: false,
