@@ -5,6 +5,7 @@
  */
 export default function idbReady(): Promise<void> {
   const isSafari =
+    typeof navigator !== undefined &&
     !navigator.userAgentData &&
     /Safari\//.test(navigator.userAgent) &&
     !/Chrom(e|ium)\//.test(navigator.userAgent);
