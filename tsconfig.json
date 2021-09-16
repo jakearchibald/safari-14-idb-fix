@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
+    "target": "ES5",
     "module": "esnext",
     "strict": true,
     "outDir": ".ts-tmp",
