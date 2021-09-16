@@ -17,7 +17,7 @@ export default async function () {
 
   return {
     input: 'src/index.ts',
-    plugins: [simpleTS('./'), terser()],
+    plugins: [simpleTS('./')],
     output: [
       {
         file: 'dist/index.js',
@@ -35,7 +35,7 @@ export default async function () {
         format: 'iife',
         name: 'idbReady',
         esModule: false,
-        plugins: [removeDefs()],
+        plugins: [removeDefs(), terser()],
       },
     ],
   };
